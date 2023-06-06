@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +7,9 @@
 }
 html {
     scroll-behavior: smooth; 
+}
+.naranja{
+    color: #ff5e01;
 }
 .Titulo{
     margin-top: 50px;
@@ -29,7 +31,6 @@ html {
     }
 }
 
-/* Animación para el párrafo */
 @keyframes slideInLeft {
     0% {
         opacity: 0;
@@ -76,7 +77,6 @@ body
 p
 {
     font-weight: 300;
-    color: var(--text-p);
     user-select: none;
     transition: 0.5s;
     text-align: justify;
@@ -98,8 +98,6 @@ section
 {
     padding: 100px;
 }
-
-                                /* Menu de Navegação */
 
 header
 {
@@ -273,15 +271,13 @@ li{
     letter-spacing: 6px;
 }
 
-                                /* Aba "Sobre" */
-
 .row
 {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    animation: slideInUp 1s ease-in-out;
+    animation: mover2 1s ease-in-out;
 }
 
 .row .col50
@@ -319,10 +315,10 @@ li{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    animation: fadeInRight 1s ease-in-out;
+    animation: mover1 1s ease-in-out;
 
 }
-@keyframes slideInUp {
+@keyframes mover2 {
     0% {
         opacity: 0;
         transform: translateY(20px);
@@ -346,7 +342,7 @@ li{
 }
 
 /* Animación para la imagen */
-@keyframes fadeInRight {
+@keyframes mover1 {
     0% {
         opacity: 0;
         transform: translateX(20px);
@@ -739,5 +735,8 @@ footer div p
         background-repeat: repeat;
         background-position: center;
         object-fit: cover;
+    }
+    .grupo2023{
+        font-size: 0.7em;
     }
 }
